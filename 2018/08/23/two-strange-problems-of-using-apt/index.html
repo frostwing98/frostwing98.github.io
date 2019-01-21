@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Solving [Waiting for headers] when using apt-get update | Supernova | frostwing98&#39;s blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Linux">
+    <meta name="description" content="Problem: When using apt-get update, always stuck @ following conditions: [Waiting for headers]  or [Waiting for headers] [Connecting to security.ubuntu.com (2001:67c:1360:8001  Solution 1:Such problem">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Solving [Waiting for headers] when using apt-get update">
+<meta property="og:url" content="http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/index.html">
+<meta property="og:site_name" content="Supernova">
+<meta property="og:description" content="Problem: When using apt-get update, always stuck @ following conditions: [Waiting for headers]  or [Waiting for headers] [Connecting to security.ubuntu.com (2001:67c:1360:8001  Solution 1:Such problem">
+<meta property="og:locale" content="English">
+<meta property="og:updated_time" content="2019-01-21T06:39:24.776Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Solving [Waiting for headers] when using apt-get update">
+<meta name="twitter:description" content="Problem: When using apt-get update, always stuck @ following conditions: [Waiting for headers]  or [Waiting for headers] [Connecting to security.ubuntu.com (2001:67c:1360:8001  Solution 1:Such problem">
+    
+        <link rel="alternate" type="application/atom+xml" title="Supernova" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">frostwing98</h5>
+          <a href="mailto:frostwing98@gmail.com" title="frostwing98@gmail.com" class="mail">frostwing98@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                Main Page
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/frostwing98" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about">
+                <i class="icon icon-lg icon-question"></i>
+                About
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/friends">
+                <i class="icon icon-lg icon-handshake-o"></i>
+                Friends
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Solving [Waiting for headers] when using apt-get update</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Solving [Waiting for headers] when using apt-get update</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-08-23T05:50:20.000Z" itemprop="datePublished" class="page-time">
+  2018-08-23
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Daily/">Daily</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Problem-When-using-apt-get-update-always-stuck-following-conditions"><span class="post-toc-number">1.</span> <span class="post-toc-text">Problem: When using apt-get update, always stuck @ following conditions:</span></a></li></ol><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#or"><span class="post-toc-number"></span> <span class="post-toc-text">or</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Solution-1"><span class="post-toc-number"></span> <span class="post-toc-text">Solution 1:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Solution-2"><span class="post-toc-number"></span> <span class="post-toc-text">Solution 2:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Solution-3"><span class="post-toc-number"></span> <span class="post-toc-text">Solution 3:</span></a>
+        </li></nav>
+    </aside>
+
+
+<article id="post-two-strange-problems-of-using-apt" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Solving [Waiting for headers] when using apt-get update</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-08-23 13:50:20" datetime="2018-08-23T05:50:20.000Z" itemprop="datePublished">2018-08-23</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Daily/">Daily</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h4 id="Problem-When-using-apt-get-update-always-stuck-following-conditions"><a href="#Problem-When-using-apt-get-update-always-stuck-following-conditions" class="headerlink" title="Problem: When using apt-get update, always stuck @ following conditions:"></a>Problem: When using apt-get update, always stuck @ following conditions:</h4><blockquote>
+<p>[Waiting for headers]</p>
+</blockquote>
+<h3 id="or"><a href="#or" class="headerlink" title="or"></a>or</h3><blockquote>
+<p>[Waiting for headers] [Connecting to security.ubuntu.com (2001:67c:1360:8001</p>
+</blockquote>
+<h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution 1:"></a>Solution 1:</h3><p>Such problem could happen when ipv6 is enabled while software source doesn’t support. We can force apt-get use ipv4 method to download by using command as followed:</p>
+<p>sudo apt-get -o Acquire::ForceIPv4=true update</p>
+<h3 id="Solution-2"><a href="#Solution-2" class="headerlink" title="Solution 2:"></a>Solution 2:</h3><p>Such problem could happen when previous software sources have been updated partially, when being too eager to press Ctrl+C, can cause integrity problems. Such problems could be solved by using:</p>
+<p>sudo rm -r /var/lib/apt/lists/<em><br>sudo rm -r /var/lib/apt/lists/partial/</em> </p>
+<h3 id="Solution-3"><a href="#Solution-3" class="headerlink" title="Solution 3:"></a>Solution 3:</h3><p>By removing all useless or expired software sources, PPAs, and anything else.</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-01-21T06:39:24.776Z" itemprop="dateUpdated">2019-01-21 14:39:24</time>
+</span><br>
+
+
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="frostwing98">
+            frostwing98
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/&title=《Solving [Waiting for headers] when using apt-get update》 — Supernova&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/&title=《Solving [Waiting for headers] when using apt-get update》 — Supernova&source=My personal blog" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Solving [Waiting for headers] when using apt-get update》 — Supernova&url=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/10/31/huwang-cup-writeup/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Huwang Cup Writeup</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/08/16/english-posts-from-today-on/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">English Posts From Today On</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        Help us to better our website
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        Total visitors：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        Total visits：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>frostwing98 &copy; 2017 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/&title=《Solving [Waiting for headers] when using apt-get update》 — Supernova&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/&title=《Solving [Waiting for headers] when using apt-get update》 — Supernova&source=My personal blog" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Solving [Waiting for headers] when using apt-get update》 — Supernova&url=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/08/23/two-strange-problems-of-using-apt/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsklEQVR42u3a0WrkMAwF0Pn/n+7CPhW6nr2SrLSFk6dh6CQ6LsTiyq9XfH38vb5+/vzN6fvkPsk9v/7NtQsPDw+vVfrpSh7/ntcr630NSc14eHh427xkM6iSeiXmvPc14+Hh4f0E3qmsW11u8pd4eHh4v4tXjSEm0UMvmMDDw8N7kpc3uPmW0Hv1J5vQStaCh4eHF/MmA7Dv+vzQfA8PDw+vOFWvBqz5CzqJOapR8j+ejoeHh7fAS45GJaFAL2iYDL3yeAIPDw9vg5eXlb+4q6OseSDyHyoeHh7eJd5kEJVHtNV8IGm+o38AHh4e3gJvY/zfa6bn4TIeHh7ek7zqEau89Dz8rR6lag7D8PDw8Ma8jQCit2H0GvRox8PDw8Nb4/Ui2kmh+aArD4WPMS4eHh7eJV7+/kxa2F5znP82ae7LMQQeHh5ei5cP5vORVc7I2/FJeIGHh4f3DO9uPDE5jjCJgPHw8PDu8nphQXlsP2+I8+gWDw8Pb5k3GX1V491J+34h/MXDw8Nb4N0qtxfjTmLlwtaCh4eHN+ZVjzrlx556xw7yhY4+4+Hh4S3zJo+cNMrVOxQiYDw8PLw13jz5vNVqJ2Fxsl3h4eHhPcObvLiT41l5AIGHh4f3u3gJozcSy9viV/E6/hYPDw9vmZePqaol9sLffKGPi46Hh4e3wMsPM/W+Se7Wa+gLmwoeHh7eVV41OLi1ENVjWNUg43gyAg8PD2+Nl7Dz5egdDsi3gWOdeHh4eAu8ycu3+lrPlynHT+rBw8PDm/CqwegkeH0/fqveOfotHh4e3hovOdg0eWQ11Mg3nmgAhoeHh/dNvByWx7hRIBvXdmyp8fDw8H4YL98kqoX2WvzLGwMeHh7eIIzIh0y9WLa6iFFYjIeHh7fAmxxsqga182MEzQkeHh4e3h3eHwzhac6CfFtUAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Come back!';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'Thanks for visiting';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
