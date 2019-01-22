@@ -363,10 +363,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = 'Come back!';
+            document.title = 'Fatal Error!';
             clearTimeout(titleTime);
         } else {
-            document.title = 'Thanks for visiting';
+            document.title = 'It's a joke XD';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
