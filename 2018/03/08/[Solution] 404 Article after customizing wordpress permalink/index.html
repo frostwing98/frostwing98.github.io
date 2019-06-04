@@ -21,18 +21,18 @@
     
     
     <meta name="keywords" content="Blog">
-    <meta name="description" content="After customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title.  The reason is that apache2 does not seem to support rewrite function, so we">
+    <meta name="description" content="Solving 404 article problemsAfter customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title.  The reason is that apache2 does not seem to supp">
 <meta name="keywords" content="Blog">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Solution] 404 Article after customizing wordpress permalink">
 <meta property="og:url" content="http://yoursite.com/2018/03/08/[Solution] 404 Article after customizing wordpress permalink/index.html">
 <meta property="og:site_name" content="Supernova">
-<meta property="og:description" content="After customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title.  The reason is that apache2 does not seem to support rewrite function, so we">
+<meta property="og:description" content="Solving 404 article problemsAfter customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title.  The reason is that apache2 does not seem to supp">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-01-21T06:39:24.776Z">
+<meta property="og:updated_time" content="2019-06-04T07:03:30.194Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[Solution] 404 Article after customizing wordpress permalink">
-<meta name="twitter:description" content="After customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title.  The reason is that apache2 does not seem to support rewrite function, so we">
+<meta name="twitter:description" content="Solving 404 article problemsAfter customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title.  The reason is that apache2 does not seem to supp">
     
         <link rel="alternate" type="application/atom+xml" title="Supernova" href="/atom.xml">
     
@@ -178,6 +178,18 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Solving-404-article-problems"><span class="post-toc-number">1.</span> <span class="post-toc-text">Solving 404 article problems</span></a></li></ol>
+		<p>
+		</p><h4>Visit count(since 2019.6):</h4>
+		<script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5abn80aosdp&amp;s=220&amp;m=6&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff00ff" async="async"></script>
+		<p></p>
+        </nav>
+    </aside>
+
+
 
 <article id="post-[Solution] 404 Article after customizing wordpress permalink" class="post-article article-type-post fade" itemprop="blogPost">
 
@@ -199,7 +211,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>After customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title. </p>
+            <h1 id="Solving-404-article-problems"><a href="#Solving-404-article-problems" class="headerlink" title="Solving 404 article problems"></a>Solving 404 article problems</h1><p>After customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title. </p>
 <p>The reason is that apache2 does not seem to support rewrite function, so we have to turn it on manually. If the wordpress is configured by LAMP, we need to simply edit two items as follows.</p>
 <p>Step1  <code>a2en_mod rewrite</code> (rewrite)</p>
 <p>Step2 Edit <code>/etc/apache2/apache2.conf</code>, find and modify:</p>
@@ -218,7 +230,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-01-21T06:39:24.776Z" itemprop="dateUpdated">2019-01-21 14:39:24</time>
+    Last updated: <time datetime="2019-06-04T07:03:30.194Z" itemprop="dateUpdated">2019-06-04 15:03:30</time>
 </span><br>
 
 
@@ -237,7 +249,6 @@
 <div class="page-reward">
     <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
 </div>
-
 
 
         <div class="post-footer">
@@ -488,7 +499,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
             document.title = 'Fatal Error!';
             clearTimeout(titleTime);
         } else {
-            document.title = 'It's a joke XD';
+            document.title = 'It is a joke XD';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
@@ -496,6 +507,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
     });
 })();
 </script>
+
 
 
 

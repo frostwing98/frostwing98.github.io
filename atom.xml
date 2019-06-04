@@ -96,15 +96,15 @@
     <link href="http://yoursite.com/2018/11/15/printer-driver-on-linux/"/>
     <id>http://yoursite.com/2018/11/15/printer-driver-on-linux/</id>
     <published>2018-11-14T21:02:27.000Z</published>
-    <updated>2019-01-21T06:39:24.776Z</updated>
+    <updated>2019-06-04T07:03:14.430Z</updated>
     
-    <content type="html"><![CDATA[<p>Today, my dear father sent the Lenovo printer to my dorm. After several minutes of busy installing the device, I sat down, brewed a cup of tea, and said, ‘Let’s see what this little girl can do!’ Sadly, for the sake of goddamned linux operating system, a warning bumped out, saying, ‘Printer driver not found.’ Okay, I started searching using system-embedded tool. All right, it asks me to choose a brand but no freaking Lenovo brand found. </p><p>How come? I started searching on the Internet. </p><p>Good, Lenovo printers are mostly manufactured by Brother, and then re-branded to Lenovo. The model of my Lenovo printer is LJ2650DN, so I went to search ‘2650’ on Brother’s official website, hoping to find a linux driver.</p><p>Damn bingo, the corresponding model is 2650DN, the picture of which looks exactly the same! Downloaded, specified model name and device uri, and fuck yeah, I can print my papers in resolution of 2400dpi! Never got to go to the printing shop any more. <figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://101.132.38.91/wp-content/uploads/2018/11/2.png" alt="](http://101.132.38.91/wp-content/uploads/2018/11/1.png) ![" title="">                </div>                <div class="image-caption">](http://101.132.38.91/wp-content/uploads/2018/11/1.png) ![</div>            </figure> </p><p>Victory of linux user again!</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Linux-Driver"><a href="#Linux-Driver" class="headerlink" title="Linux Driver"></a>Linux Driver</h1><p>Today, my dear father sent the Lenovo printer to my dorm. After several minutes of busy installing the device, I sat down, brewed a cup of tea, and said, ‘Let’s see what this little girl can do!’ Sadly, for the sake of goddamned linux operating system, a warning bumped out, saying, ‘Printer driver not found.’ Okay, I started searching using system-embedded tool. All right, it asks me to choose a brand but no freaking Lenovo brand found. </p><p>How come? I started searching on the Internet. </p><p>Good, Lenovo printers are mostly manufactured by Brother, and then re-branded to Lenovo. The model of my Lenovo printer is LJ2650DN, so I went to search ‘2650’ on Brother’s official website, hoping to find a linux driver.</p><p>Damn bingo, the corresponding model is 2650DN, the picture of which looks exactly the same! Downloaded, specified model name and device uri, and fuck yeah, I can print my papers in resolution of 2400dpi! Never got to go to the printing shop any more. <figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="http://101.132.38.91/wp-content/uploads/2018/11/2.png" alt="](http://101.132.38.91/wp-content/uploads/2018/11/1.png) ![" title="">                </div>                <div class="image-caption">](http://101.132.38.91/wp-content/uploads/2018/11/1.png) ![</div>            </figure> </p><p>Victory of linux user again!</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Today, my dear father sent the Lenovo printer to my dorm. After several minutes of busy installing the device, I sat down, brewed a cup o
+        &lt;h1 id=&quot;Linux-Driver&quot;&gt;&lt;a href=&quot;#Linux-Driver&quot; class=&quot;headerlink&quot; title=&quot;Linux Driver&quot;&gt;&lt;/a&gt;Linux Driver&lt;/h1&gt;&lt;p&gt;Today, my dear father sent the
       
     
     </summary>
@@ -121,19 +121,15 @@
     <link href="http://yoursite.com/2018/10/31/huwang-cup-writeup/"/>
     <id>http://yoursite.com/2018/10/31/huwang-cup-writeup/</id>
     <published>2018-10-30T18:48:40.000Z</published>
-    <updated>2019-01-21T06:39:24.776Z</updated>
+    <updated>2019-06-04T07:02:54.313Z</updated>
     
-    <content type="html"><![CDATA[<p>Huwang Cup Qual. Writeup of Trinity Team. <div class="row">    <embed src="&lt;a" width="100%" height="550" type="application/pdf"></div></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Huwang-Cup-Qual-Writeup-of-Trinity-Team"><a href="#Huwang-Cup-Qual-Writeup-of-Trinity-Team" class="headerlink" title="Huwang Cup Qual. Writeup of Trinity Team."></a>Huwang Cup Qual. Writeup of Trinity Team.</h1><p><div class="row">    <embed src="&lt;a" width="100%" height="550" type="application/pdf"></div></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Huwang Cup Qual. Writeup of Trinity Team. 
-
-	&lt;div class=&quot;row&quot;&gt;
-    &lt;embed src=&quot;&amp;lt;a&quot; width=&quot;100%&quot; height=&quot;550&quot; type=&quot;application/pdf&quot;&gt;
-	
+        &lt;h1 id=&quot;Huwang-Cup-Qual-Writeup-of-Trinity-Team&quot;&gt;&lt;a href=&quot;#Huwang-Cup-Qual-Writeup-of-Trinity-Team&quot; class=&quot;headerlink&quot; title=&quot;Huwang Cup Qua
       
     
     </summary>
@@ -175,16 +171,15 @@
     <link href="http://yoursite.com/2018/08/16/english-posts-from-today-on/"/>
     <id>http://yoursite.com/2018/08/16/english-posts-from-today-on/</id>
     <published>2018-08-16T02:55:29.000Z</published>
-    <updated>2019-01-21T06:39:24.776Z</updated>
+    <updated>2019-06-04T07:02:42.797Z</updated>
     
-    <content type="html"><![CDATA[<p>I hadbeen considering using English, a more wide-accepted language, to write down and publish my new posts.</p><p>Such ideas had been stronger and stronger after I returned back from University of Oxford, and University of Cambridge, where I met with lots of new friends. They said that they were, and are, really interested in me, and my major. It is indeed a pity, though, that it happened to be a personal website written in Chinese: but not anymore. </p><p>Moreover, during the days in UK, I became worried about my writing abilities. Although I have been quite confident in communicating with people fluently, my writing ability remained relatively weak. Then I came into a cool idea, that I will reorganize this lovely website, and adjust them in the favor of more friends from English-spoken countries or not, without the problems and barriers of languages. </p><p>This is also the initial reason why I set up this website. From today on, I am going to change this website into English, and from now on, most of the posts shall be written in English. </p>]]></content>
+    <content type="html"><![CDATA[<h1 id="English-Posts-from-Today-On"><a href="#English-Posts-from-Today-On" class="headerlink" title="English Posts from Today On"></a>English Posts from Today On</h1><p>I hadbeen considering using English, a more wide-accepted language, to write down and publish my new posts.</p><p>Such ideas had been stronger and stronger after I returned back from University of Oxford, and University of Cambridge, where I met with lots of new friends. They said that they were, and are, really interested in me, and my major. It is indeed a pity, though, that it happened to be a personal website written in Chinese: but not anymore. </p><p>Moreover, during the days in UK, I became worried about my writing abilities. Although I have been quite confident in communicating with people fluently, my writing ability remained relatively weak. Then I came into a cool idea, that I will reorganize this lovely website, and adjust them in the favor of more friends from English-spoken countries or not, without the problems and barriers of languages. </p><p>This is also the initial reason why I set up this website. From today on, I am going to change this website into English, and from now on, most of the posts shall be written in English. </p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;I hadbeen considering using English, a more wide-accepted language, to write down and publish my new posts.&lt;/p&gt;
-&lt;p&gt;Such ideas had been st
+        &lt;h1 id=&quot;English-Posts-from-Today-On&quot;&gt;&lt;a href=&quot;#English-Posts-from-Today-On&quot; class=&quot;headerlink&quot; title=&quot;English Posts from Today On&quot;&gt;&lt;/a&gt;Engli
       
     
     </summary>
@@ -227,16 +222,15 @@
     <link href="http://yoursite.com/2018/04/13/Solution:%5C_err_tunnel_connection_failed%20when%20visiting%20shadowsocks%20on%20VPS/"/>
     <id>http://yoursite.com/2018/04/13/Solution:\_err_tunnel_connection_failed when visiting shadowsocks on VPS/</id>
     <published>2018-04-13T05:12:34.000Z</published>
-    <updated>2019-01-21T06:39:24.776Z</updated>
+    <updated>2019-06-04T07:03:43.799Z</updated>
     
-    <content type="html"><![CDATA[<p>clear host iptables check whether you are running sslocal or ssserver Damn it. : /</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Simple-solution"><a href="#Simple-solution" class="headerlink" title="Simple solution:"></a>Simple solution:</h1><p>clear host iptables check whether you are running sslocal or ssserver Damn it. : /</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;clear host iptables check whether you are running sslocal or ssserver Damn it. : /&lt;/p&gt;
-
+        &lt;h1 id=&quot;Simple-solution&quot;&gt;&lt;a href=&quot;#Simple-solution&quot; class=&quot;headerlink&quot; title=&quot;Simple solution:&quot;&gt;&lt;/a&gt;Simple solution:&lt;/h1&gt;&lt;p&gt;clear host iptab
       
     
     </summary>
@@ -253,15 +247,15 @@
     <link href="http://yoursite.com/2018/04/02/using%20aria2%20to%20bypass%20doanload%20limit%20of%20BaiduYun/"/>
     <id>http://yoursite.com/2018/04/02/using aria2 to bypass doanload limit of BaiduYun/</id>
     <published>2018-04-01T23:09:56.000Z</published>
-    <updated>2019-01-21T06:39:24.776Z</updated>
+    <updated>2019-06-04T07:04:10.123Z</updated>
     
-    <content type="html"><![CDATA[<p>&lt;!doctype html&gt; Problem: there is no Baiduyun client on linux… 管他呢，垃圾百度云限我速度，早知道就不送这么多钱了……<br>1.chrome://extensions，安装baiduexporter与aria2c <strong>之后打开百度云可以看到多了一个导出下载选项。</strong></p><ol start="2"><li>apt-get install aria2 配置 最小限制：10M json-rpc链接：<a href="http://127.0.0.1:6800/jsonrpc" target="_blank" rel="noopener">http://127.0.0.1:6800/jsonrpc</a></li><li>aria2.sh中写入：</li></ol><blockquote><p>aria2c –enable-rpc –rpc-listen-all –rpc-allow-origin-all –file-allocation=none –max-connection-per-server=3 –max-concurrent-downloads=5 –continue -d ~/ 这个脚本在后台运行aria2.</p></blockquote><p><strong>选中文件，导出下载，就可以看到速度飞升。</strong> 4.<a href="http://binux.github.io/yaaw/demo/" target="_blank" rel="noopener">http://binux.github.io/yaaw/demo/</a> 扳手那里设置127.0.0.1:6800就可以在线看到。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>&lt;!doctype html&gt; Problem: there is no Baiduyun client on linux… 管他呢，垃圾百度云限我速度，早知道就不送这么多钱了……<br>1.chrome://extensions，安装baiduexporter与aria2c <strong>之后打开百度云可以看到多了一个导出下载选项。</strong></p><ol start="2"><li>apt-get install aria2 配置 最小限制：10M json-rpc链接：<a href="http://127.0.0.1:6800/jsonrpc" target="_blank" rel="noopener">http://127.0.0.1:6800/jsonrpc</a></li><li>aria2.sh中写入：</li></ol><blockquote><p>aria2c –enable-rpc –rpc-listen-all –rpc-allow-origin-all –file-allocation=none –max-connection-per-server=3 –max-concurrent-downloads=5 –continue -d ~/ 这个脚本在后台运行aria2.</p></blockquote><p><strong>选中文件，导出下载，就可以看到速度飞升。</strong> 4.<a href="http://binux.github.io/yaaw/demo/" target="_blank" rel="noopener">http://binux.github.io/yaaw/demo/</a> 扳手那里设置127.0.0.1:6800就可以在线看到。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&amp;lt;!doctype html&amp;gt; Problem: there is no Baiduyun client on linux… 管他呢，垃圾百度云限我速度，早知道就不送这么多钱了……&lt;br&gt;1.chrome://extensions，安装baiduexporter
+        &lt;h1 id=&quot;Problem&quot;&gt;&lt;a href=&quot;#Problem&quot; class=&quot;headerlink&quot; title=&quot;Problem&quot;&gt;&lt;/a&gt;Problem&lt;/h1&gt;&lt;p&gt;&amp;lt;!doctype html&amp;gt; Problem: there is no Baiduyu
       
     
     </summary>
@@ -303,16 +297,15 @@
     <link href="http://yoursite.com/2018/03/08/%5BSolution%5D%20404%20Article%20after%20customizing%20wordpress%20permalink/"/>
     <id>http://yoursite.com/2018/03/08/[Solution] 404 Article after customizing wordpress permalink/</id>
     <published>2018-03-07T18:57:58.000Z</published>
-    <updated>2019-01-21T06:39:24.776Z</updated>
+    <updated>2019-06-04T07:03:30.194Z</updated>
     
-    <content type="html"><![CDATA[<p>After customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title. </p><p>The reason is that apache2 does not seem to support rewrite function, so we have to turn it on manually. If the wordpress is configured by LAMP, we need to simply edit two items as follows.</p><p>Step1  <code>a2en_mod rewrite</code> (rewrite)</p><p>Step2 Edit <code>/etc/apache2/apache2.conf</code>, find and modify:</p><blockquote><directory><br>Options FollowSymLinks<br>AllowOverride All(Initially:None)<br></directory>&lt;Directory /var/www/html&gt;<br># … other directives…<br>AllowOverride All(Initially:None)<br><p>then:<br>/etc/init.d/apache2 restart.</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="Solving-404-article-problems"><a href="#Solving-404-article-problems" class="headerlink" title="Solving 404 article problems"></a>Solving 404 article problems</h1><p>After customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title. </p><p>The reason is that apache2 does not seem to support rewrite function, so we have to turn it on manually. If the wordpress is configured by LAMP, we need to simply edit two items as follows.</p><p>Step1  <code>a2en_mod rewrite</code> (rewrite)</p><p>Step2 Edit <code>/etc/apache2/apache2.conf</code>, find and modify:</p><blockquote><directory><br>Options FollowSymLinks<br>AllowOverride All(Initially:None)<br></directory>&lt;Directory /var/www/html&gt;<br># … other directives…<br>AllowOverride All(Initially:None)<br><p>then:<br>/etc/init.d/apache2 restart.</p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;After customized permalink of the articles, the title of post remains but displays 404 page after clicking onto the title. &lt;/p&gt;
-&lt;p&gt;The re
+        &lt;h1 id=&quot;Solving-404-article-problems&quot;&gt;&lt;a href=&quot;#Solving-404-article-problems&quot; class=&quot;headerlink&quot; title=&quot;Solving 404 article problems&quot;&gt;&lt;/a&gt;So
       
     
     </summary>
