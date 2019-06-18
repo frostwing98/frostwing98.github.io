@@ -14,7 +14,7 @@
     
     
     
-    <title>RELEASE! MAIL-Multiple AP Indoor Localization project | Supernova | frostwing98&#39;s blog</title>
+    <title>RELEASE! MAIL-Multiple AP Indoor Localization project | FROSTLAND | frostwing98&#39;s personal website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -26,7 +26,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="RELEASE! MAIL-Multiple AP Indoor Localization project">
 <meta property="og:url" content="http://yoursite.com/2019/06/15/MAIL/index.html">
-<meta property="og:site_name" content="Supernova">
+<meta property="og:site_name" content="FROSTLAND">
 <meta property="og:description" content="RELEASE! MAIL-Multiple AP Indoor Localization projectfrostwing98(Yuqing Yang)COSEC, Nanjing University  I. IntroductionAs the widespread deployment of various access points(hereinafter AP), more and m">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/images/MAIL/MAIL-fake.png">
@@ -41,9 +41,9 @@
 <meta name="twitter:description" content="RELEASE! MAIL-Multiple AP Indoor Localization projectfrostwing98(Yuqing Yang)COSEC, Nanjing University  I. IntroductionAs the widespread deployment of various access points(hereinafter AP), more and m">
 <meta name="twitter:image" content="http://yoursite.com/images/MAIL/MAIL-fake.png">
     
-        <link rel="alternate" type="application/atom+xml" title="Supernova" href="/atom.xml">
+        <link rel="alternate" type="application/atom+xml" title="FROSTLAND" href="/atom.xml">
     
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/img/favicon.png">
     <link rel="stylesheet" href="/css/style.css?v=1.7.2">
     <script>window.lazyScripts=[]</script>
 
@@ -162,7 +162,9 @@
 </header>
 <header class="content-header post-header">
 
+
     <div class="container fade-scale">
+
         <h1 class="title">RELEASE! MAIL-Multiple AP Indoor Localization project</h1>
         <h5 class="subtitle">
             
@@ -222,21 +224,9 @@
 <p>Then the attacker’s rogue AP(could be a mobile hotspot, PC or even a real router) act as a middle man between the victim and the real AP. By launching a man-in-the-middle attack(henceforth mitm attack), capturing the packets sent from victims or the official AP, the attackers can easily eavesdrop the credential information from the victims, such as passwords.</p>
 <hr>
 <p>Prior to implementing the project, I made a fake Nanjing University WLAN authentication System.</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/MAIL/MAIL-fake.png" alt="A fake website example" title="">
-                </div>
-                <div class="image-caption">A fake website example</div>
-            </figure>
+<p><img src="/images/MAIL/MAIL-fake.png" alt="A fake website example"></p>
 <p>And the original one:</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/MAIL/MAIL-real.png" alt="The original website" title="">
-                </div>
-                <div class="image-caption">The original website</div>
-            </figure>
+<p><img src="/images/MAIL/MAIL-real.png" alt="The original website"></p>
 <hr>
 <h2 id="II-Related-works"><a href="#II-Related-works" class="headerlink" title="II. Related works"></a>II. Related works</h2><p>To tackle such a problem, researchers have developed various approaches.</p>
 <h3 id="Radiometric-signatures-2008"><a href="#Radiometric-signatures-2008" class="headerlink" title="Radiometric signatures(2008)"></a>Radiometric signatures(2008)</h3><p>Vladmir Brik et. al., [1]utilized radiometric signatures to identify the subtle differences between two different APs but with same names. Usually a router’s radiometric signatures, exempli gratia, strengths, although vary but tiny, stay stable during long term runs. However such fluctuation in radiometric signature between devices, even same types of same devices, are rather different.</p>
@@ -254,13 +244,7 @@
 <p>The answer is simple: let’s locate it.</p>
 <p>In 2011, Zengbin Zhang et al.[4] proposed an idea of merely using off-the-shelf smartphone, and without special equipments, to locate on which direction is the connected AP placed.</p>
 <p>The principle is simple. When the user stands in front of the wireless antenna of the smartphone, the emissions of phone may be blocked. Hence the signal strength received from the AP decreases.<br>In such case, the user merely needs to turn around 360 degree like a radar, and signal from all blocking stances is recorded. The degree at which the signal decreses most dramatically becomes the direction of AP.</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/MAIL/antenna.png" alt="Antenna working process" title="">
-                </div>
-                <div class="image-caption">Antenna working process</div>
-            </figure>
+<p><img src="/images/MAIL/antenna.png" alt="Antenna working process"></p>
 <h2 id="IV-Our-method-phone-as-a-Geiger-counter"><a href="#IV-Our-method-phone-as-a-Geiger-counter" class="headerlink" title="IV. Our method: phone as a Geiger counter"></a>IV. Our method: phone as a Geiger counter</h2><p>The inspiration of my method, however, comes from two interesting stories.</p>
 <h3 id="The-Chernobyl-Disaster"><a href="#The-Chernobyl-Disaster" class="headerlink" title="The Chernobyl Disaster"></a>The Chernobyl Disaster</h3><p>The explosion of Chernobyl is a disaster, and even until today, those who enters Chernobyl should be equipped with a Geiger counter. When holding the geiger counter, it shows the current radiation, when the radiation rises, it indicates that we are walking towards a center of concerntrated radiating materials.<br>What about we apply such scheme to localizing APs?</p>
 <h4 id="Checking-in-in-enterprises"><a href="#Checking-in-in-enterprises" class="headerlink" title="Checking-in in enterprises"></a>Checking-in in enterprises</h4><p>Some companies now adopt checking in via phone. When checking-in, the environmental signature, e.g., AP names and strength around, GPS localization informations, will be take into account to verify that you are IN the company, rather than FAKING TO BE in the company. This process is also related to indoor-localizing people using multiple routers. In a paper in 2016 from MSR-India, a trangular localization algorithm can be adopted using multiple APs to localize user.</p>
@@ -297,13 +281,7 @@
 <p>Moreover, the system has the potential of not merely pinpointing APs, but also distinguish device type, and even applicable of pinpointing non-APs, i.e. clients.</p>
 <p>The future PC version of implementing above features is in progress.</p>
 <h2 id="VII-Evaluations"><a href="#VII-Evaluations" class="headerlink" title="VII. Evaluations"></a>VII. Evaluations</h2><p>In the experiments both in dormitory and classroom, the granularity of localization can be within 1 meter, which is quite good.</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/MAIL/aha.png" alt="Experimantal result" title="">
-                </div>
-                <div class="image-caption">Experimantal result</div>
-            </figure>
+<p><img src="/images/MAIL/aha.png" alt="Experimantal result"></p>
 <p><em>(step length is around 50 cm, time between each step is less than 0.5s)</em></p>
 <p>Compared with <em>I am the antenna</em>, our method does not require standing and rotating, which attracts the sight of strangers, causing alert to attackers, and we are capable of pinpointing rather than merely telling the direction.</p>
 <p>Our method is stealthy, even able to locate when putting the phone in pocket, and capable of locating multiple APs.</p>
@@ -351,7 +329,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/06/15/MAIL/&title=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — Supernova&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/06/15/MAIL/&title=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — FROSTLAND&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -361,7 +339,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/06/15/MAIL/&title=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — Supernova&source=My personal blog" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/06/15/MAIL/&title=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — FROSTLAND&source=My personal blog" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -371,7 +349,7 @@
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — Supernova&url=http://yoursite.com/2019/06/15/MAIL/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — FROSTLAND&url=http://yoursite.com/2019/06/15/MAIL/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
@@ -465,7 +443,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/06/15/MAIL/&title=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — Supernova&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/06/15/MAIL/&title=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — FROSTLAND&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -475,7 +453,7 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/06/15/MAIL/&title=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — Supernova&source=My personal blog" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/06/15/MAIL/&title=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — FROSTLAND&source=My personal blog" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -485,7 +463,7 @@
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — Supernova&url=http://yoursite.com/2019/06/15/MAIL/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《RELEASE! MAIL-Multiple AP Indoor Localization project》 — FROSTLAND&url=http://yoursite.com/2019/06/15/MAIL/&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
