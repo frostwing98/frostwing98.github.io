@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-10T03:07:51.064Z</updated>
+  <updated>2019-10-25T09:52:54.556Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How (and How Not) to Write a Good Systems Paper</title>
+    <link href="http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/"/>
+    <id>http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/</id>
+    <published>2019-10-25T09:45:00.000Z</published>
+    <updated>2019-10-25T09:52:54.556Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="How-and-How-Not-to-Write-a-Good-Systems-Paper"><a href="#How-and-How-Not-to-Write-a-Good-Systems-Paper" class="headerlink" title="How (and How Not) to Write a Good Systems Paper"></a>How (and How Not) to Write a Good Systems Paper</h1><p>Well, this is not yet written by me. :P </p><p>This article was from a post on my fellow PhD collaborator Hao Wu. This passage was written by Roy Levin and David D. Redell (Ninth SOSP Program Committee Co-chairmen), and first appeared in ACM SIGOPS Operating Systems Review, Vol. 17, No. 3 (July, 1983), pages 35-40. </p><p>For more information please turn to his <a href="https://hackhao.github.io/how-to-write-papers/" target="_blank" rel="noopener">blog</a>. Don’t worry, you are welcomed. :P</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;How-and-How-Not-to-Write-a-Good-Systems-Paper&quot;&gt;&lt;a href=&quot;#How-and-How-Not-to-Write-a-Good-Systems-Paper&quot; class=&quot;headerlink&quot; title=&quot;Ho
+      
+    
+    </summary>
+    
+      <category term="Research" scheme="http://yoursite.com/categories/Research/"/>
+    
+    
+      <category term="Security" scheme="http://yoursite.com/tags/Security/"/>
+    
+  </entry>
   
   <entry>
     <title>How to read a computer science paper</title>

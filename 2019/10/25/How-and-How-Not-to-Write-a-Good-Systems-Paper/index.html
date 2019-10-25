@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>How (and How Not) to Write a Good Systems Paper | FROSTLAND | Yuqing Yang(frostwing98)&#39;s personal website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Security">
+    <meta name="description" content="How (and How Not) to Write a Good Systems PaperWell, this is not yet written by me. :P  This article was from a post on my fellow PhD collaborator Hao Wu. This passage was written by Roy Levin and Dav">
+<meta name="keywords" content="Security">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How (and How Not) to Write a Good Systems Paper">
+<meta property="og:url" content="http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/index.html">
+<meta property="og:site_name" content="FROSTLAND">
+<meta property="og:description" content="How (and How Not) to Write a Good Systems PaperWell, this is not yet written by me. :P  This article was from a post on my fellow PhD collaborator Hao Wu. This passage was written by Roy Levin and Dav">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-25T09:52:54.556Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How (and How Not) to Write a Good Systems Paper">
+<meta name="twitter:description" content="How (and How Not) to Write a Good Systems PaperWell, this is not yet written by me. :P  This article was from a post on my fellow PhD collaborator Hao Wu. This passage was written by Roy Levin and Dav">
+    
+        <link rel="alternate" type="application/atom+xml" title="FROSTLAND" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">frostwing98</h5>
+          <a href="mailto:frostwing98@smail.nju.edu.cn" title="frostwing98@smail.nju.edu.cn" class="mail">frostwing98@smail.nju.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                Main Page
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about">
+                <i class="icon icon-lg icon-question"></i>
+                About
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/research">
+                <i class="icon icon-lg icon-map-o"></i>
+                Research
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about/YuqingYang_CV.pdf">
+                <i class="icon icon-lg icon-vcard-o"></i>
+                Curriculum Vitae
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/agenda">
+                <i class="icon icon-lg icon-calendar-check-o"></i>
+                Agenda
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/frostwing98" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/people">
+                <i class="icon icon-lg icon-handshake-o"></i>
+                People
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">How (and How Not) to Write a Good Systems Paper</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+
+    <div class="container fade-scale">
+
+        <h1 class="title">How (and How Not) to Write a Good Systems Paper</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-10-25T09:45:00.000Z" itemprop="datePublished" class="page-time">
+  2019-10-25
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Research/">Research</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#How-and-How-Not-to-Write-a-Good-Systems-Paper"><span class="post-toc-number">1.</span> <span class="post-toc-text">How (and How Not) to Write a Good Systems Paper</span></a></li></ol>
+		<p>
+		</p><h4>Visit count(since 2019.6):</h4>
+		<script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5abn80aosdp&amp;s=220&amp;m=6&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff00ff" async="async"></script>
+		<p></p>
+        </nav>
+    </aside>
+
+
+
+<article id="post-How-and-How-Not-to-Write-a-Good-Systems-Paper" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">How (and How Not) to Write a Good Systems Paper</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-10-25 17:45:00" datetime="2019-10-25T09:45:00.000Z" itemprop="datePublished">2019-10-25</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Research/">Research</a></li></ul>
+
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="How-and-How-Not-to-Write-a-Good-Systems-Paper"><a href="#How-and-How-Not-to-Write-a-Good-Systems-Paper" class="headerlink" title="How (and How Not) to Write a Good Systems Paper"></a>How (and How Not) to Write a Good Systems Paper</h1><p>Well, this is not yet written by me. :P </p>
+<p>This article was from a post on my fellow PhD collaborator Hao Wu. This passage was written by Roy Levin and David D. Redell (Ninth SOSP Program Committee Co-chairmen), and first appeared in ACM SIGOPS Operating Systems Review, Vol. 17, No. 3 (July, 1983), pages 35-40. </p>
+<p>For more information please turn to his <a href="https://hackhao.github.io/how-to-write-papers/" target="_blank" rel="noopener">blog</a>. Don’t worry, you are welcomed. :P</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-10-25T09:52:54.556Z" itemprop="dateUpdated">2019-10-25 17:52:54</time>
+</span><br>
+
+
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="frostwing98">
+            frostwing98
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Security/">Security</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/&title=《How (and How Not) to Write a Good Systems Paper》 — FROSTLAND&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/&title=《How (and How Not) to Write a Good Systems Paper》 — FROSTLAND&source=My personal blog" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《How (and How Not) to Write a Good Systems Paper》 — FROSTLAND&url=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/10/10/How-to-read-paper/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">How to read a computer science paper</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>frostwing98 &copy; 2017 - 2019</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/&title=《How (and How Not) to Write a Good Systems Paper》 — FROSTLAND&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/&title=《How (and How Not) to Write a Good Systems Paper》 — FROSTLAND&source=My personal blog" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《How (and How Not) to Write a Good Systems Paper》 — FROSTLAND&url=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACxElEQVR42u3dwW7bMBAEUP//T6dATwEaVTO7ot0CTychtmk+BhCZ2QXyesXX1+/r+/33n7Tv/Prjuvrs1cgPX3h4eHijqV9d+RfPPpsvzdWrV9+Lh4eHd5o3+7K/bxKbaeVLdmPBw8PD+ygvPxDPqMl5GA8PD+//4uWTSx7rs9Hw8PDw/h1ePqH2PXm+2m5CD2cteHh4eDFvVgD77P3x+h4eHh7eqKrePriTxoK2pSDfDH74FB4eHt4BXtveNHtMJ0HDbBOK5oOHh4d3jDeLVpNF2ZTE2m3ph5ng4eHhHeDlW8W+TDWLevMFjcJcPDw8vAVv/7jPW6aSV9vDPR4eHt77eXkUm5fq24g22STywOKVryIeHh7eiDcbOg8XZkftfOSbV/Hw8PAO89qwNY8bkid2W/SKImY8PDy8A7y28J8HBLMQYTZ+Gw3j4eHh7XlJu0DbNvpaX7PxLw/WeHh4eA/x8uh2VtzKH+ibWLn4OwAPDw/vUd4sMJ01TiX4NjK+2fHw8PDwHuLNivT5e9rRkni3/QMADw8P71leWzpqy2BPNQEMtxY8PDy8A7zNcPv7vNyVLzEeHh7ee3jtoG3Jqi2ttTFHUSTDw8PDW/OS4CBvh2oP37PG02RWeHh4eOd4+2Nu3TwabySzgzUeHh7eaV7eMtW2BeSr2x6dV40CeHh4eAd4bftpW9zK449hmjJrHcDDw8PrOkjrf9KZxAT7cLaNmKNkGg8PD2/Nm0Wo+bG7jlwf2mbw8PDw3slLjrCzgta+daAdGQ8PD+8Eb/bAnYWqeYTR3m82Ejw8PLwZr90MEmSyYbQP9+Fn8fDw8I7xZptBPqFkQWdH5JtfBh4eHt5HebND8GaK7dKvNgY8PDy8j/LysKBtt2rjYzw8PLxzvKfCgvY4Pms+KA7xeHh4eAd4dTPTokyVI28e989eeHh4eOn1C4BUxTq4PLW8AAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Fatal Error!';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'It is a joke XD';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+
+</body>
+</html>
