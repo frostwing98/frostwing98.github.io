@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-25T13:08:31.452Z</updated>
+  <updated>2020-02-11T04:51:44.563Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MyLinuxConf</title>
+    <link href="http://yoursite.com/2020/02/11/MyLinuxConf/"/>
+    <id>http://yoursite.com/2020/02/11/MyLinuxConf/</id>
+    <published>2020-02-11T03:54:58.000Z</published>
+    <updated>2020-02-11T04:51:44.563Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="My-linux-configurations"><a href="#My-linux-configurations" class="headerlink" title="My linux configurations"></a>My linux configurations</h1><p>I had experienced several severe problems requiring re-installations of my system. After the mess, I decide to post and share a backup of my full configurations of my system.<br><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="images/Desktop.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure></p><h2 id="1-System-information"><a href="#1-System-information" class="headerlink" title="1. System information"></a>1. System information</h2><ul><li>Linux Mint 19.3 Cinnamon</li><li>Partition:<ul><li>200m Primary partition for /boot</li><li>200G Logical partition, versatile<ul><li>50G for /root</li><li>150G for /home</li></ul></li><li>300G Independent Data Section mounted as /Data<h2 id="2-Themes-and-appearances"><a href="#2-Themes-and-appearances" class="headerlink" title="2. Themes and appearances"></a>2. Themes and appearances</h2></li></ul></li><li>Theme: Numix Daily</li><li>Icon: Numix Circle</li><li>Desktop: Tyr-himin</li><li>Font: ProFont for Powerline, all set to 18, window title 20</li><li>Panel: <ul><li>Heiht 50</li><li>icon 0.75</li></ul></li><li>Desklets:<ul><li>CPU load</li><li>Calender Desklet<ul><li>Font Size 16</li><li>Transparency 75<h2 id="3-Applications-Terminal"><a href="#3-Applications-Terminal" class="headerlink" title="3. Applications(Terminal)"></a>3. Applications(Terminal)</h2></li></ul></li></ul></li><li>zsh with agnoster</li><li>terminal <ul><li>Initial terminal size 80x24</li><li>Set font color to green</li><li>Transparent background to around 20 to 25</li><li>Palette tango</li></ul></li><li>shadowsocks<ul><li>install from python, not apt.</li></ul></li><li>proxychains</li><li>npm</li><li>cpan</li><li>adb</li><li>textlive<h2 id="4-Applications-GUI"><a href="#4-Applications-GUI" class="headerlink" title="4. Applications(GUI)"></a>4. Applications(GUI)</h2></li><li>Chrome</li><li>Skype</li><li>Jetbrains Idea, Pycharm</li><li>AndroidStudio</li><li>Teamviewer</li><li>VirtualBox</li><li>Genymotion</li><li>vscode with latex, markdown, pdf export support</li><li>BaiduNetDisk</li><li>SQLLiteStudio</li><li>Audacity</li><li>Lightwork</li><li>Redshift</li><li>WPS</li><li>Steam</li><li>JD-gui</li><li>Netease music player</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;My-linux-configurations&quot;&gt;&lt;a href=&quot;#My-linux-configurations&quot; class=&quot;headerlink&quot; title=&quot;My linux configurations&quot;&gt;&lt;/a&gt;My linux configur
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Get yourself a zsh in linux!</title>
