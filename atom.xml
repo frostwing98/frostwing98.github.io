@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>FROSTLAND</title>
+  <title>Yuqing Yang</title>
   <icon>https://www.gravatar.com/avatar/dc7a4b09f39229b037723e85b6c0e06e</icon>
-  <subtitle>Yuqing Yang(frostwing98)&#39;s personal website</subtitle>
+  <subtitle>Welcome to the FROSTLAND!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-17T01:24:00.301Z</updated>
+  <updated>2020-10-02T09:37:44.585Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Using emacs as python and C editor</title>
+    <link href="http://yoursite.com/2020/09/30/emacs/"/>
+    <id>http://yoursite.com/2020/09/30/emacs/</id>
+    <published>2020-09-30T07:30:21.000Z</published>
+    <updated>2020-10-02T09:37:44.585Z</updated>
+    
+    <content type="html"><![CDATA[<p>To use emacs, you may would like:</p><ul><li>first, M-x package-refresh-contents to get full list of packages</li><li>evil</li><li>powerline <a href="https://github.com/jonathanchu/emacs-powerline" target="_blank" rel="noopener">https://github.com/jonathanchu/emacs-powerline</a></li><li>doom-mode</li><li>doom-themes</li><li>all-fonts</li><li>company-mode</li><li>adaptive-wrap</li><li>irony <a href="https://gist.githubusercontent.com/soonhokong/7c2bf6e8b72dbc71c93b/raw/cf7a146be5d8013cd136fb4ec917faea6e7ebbe5/how_to_setup_irony_mode.md" target="_blank" rel="noopener">https://gist.githubusercontent.com/soonhokong/7c2bf6e8b72dbc71c93b/raw/cf7a146be5d8013cd136fb4ec917faea6e7ebbe5/how_to_setup_irony_mode.md</a></li><li><p>lean</p></li><li><p>adjust the powerline and everything in .emacs.d/init.el</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;To use emacs, you may would like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;first, M-x package-refresh-contents to get full list of packages&lt;/li&gt;
+&lt;li&gt;evil&lt;/li&gt;
+&lt;li&gt;po
+      
+    
+    </summary>
+    
+      <category term="emacs" scheme="http://yoursite.com/categories/emacs/"/>
+    
+    
+      <category term="emacs" scheme="http://yoursite.com/tags/emacs/"/>
+    
+  </entry>
   
   <entry>
     <title>Lessons Learned on Doing Research</title>
