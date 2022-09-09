@@ -1,0 +1,196 @@
+
+
+<body>
+
+
+<div class="body-outer">
+  <div class="body-inner">
+    
+<link rel="stylesheet" href="/css/white.css">
+
+<article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      <div class="post-title animate__animated  animate__fadeInUp">How to read a computer science paper</div>
+      <div class="meta-intro animate__animated  animate__fadeInUp">Oct 10 2019</div>
+      
+    </div>
+    <div class="post-content-inner">
+      <div class="post-content-inner-space">
+
+      </div>
+      <div class="post-content-main animate__animated  animate__fadeInUp">
+        <!-- top型目录 -->
+        
+        <h1 id="How-to-Read-a-Computer-Science-Paper"><a href="#How-to-Read-a-Computer-Science-Paper" class="headerlink" title="How to Read a Computer Science Paper?"></a>How to Read a Computer Science Paper?</h1><p>Many students a.k.a. research newbies just like me may come up with such question from time to time throughout their research process. Every time when they try to grind themselves inside and to catch up with as much as they can understand, they easily feel frustrated and exhausted, hence sometimes they may regard research as a grinding process with little fun, and quit for a job position, or to pursue a MS degree–I have to admit, such process is reasonable and research is bound to be some kind of hard games of the few: given that you do not quit when your project is half-done, otherwise your advisor may get really sad :(</p>
+<p>I have heard our fellow classmates’ questions about how to read papers, and teachers’ complaints of students’ slow rate of paper reading, and a common lack of personal research insights. The teachers usually attribute such students’ failure, i.e., failure to read papers quickly and to catch the main idea, henceforth expressing their personal feelings and research sense, to the lack of trainings on critical thinking. I partly agree with that. But, alas, I would like to attribute their failure more to failure on understanding how a nice paper is written, or how a few pieces of rubbish and bullshits are churned out. By enhancing such knowledge, I believe they might be more adequate and capable in paper reading.</p>
+<p>Therefore I will show you how a standard form of paper that is familiar to me is arranged, and how to read a paper, well, more importantly, how to find the drawbacks the authors are trying their best to hide, and to challenge and judge the paper.</p>
+<p>Take papers in security or software as an example, various may it be in arrangements, they usually have some common sections: Abstract, Introduction, Related work(background), System design, System implementations, Evaluation, Conclusions, Bibliography…</p>
+<p>If you read the paper as it is arranged, congratulations, you might never find any vulnerabilities in their research–a good research paper are usually well-arranged, and no one would like to expose their drawbacks too explicitly. Only when you break their arrangement should you find something they are trying to hide.</p>
+<p>I will introduce these sections in the order I prefer when I am reading a paper. I still remember one of the most horrifying moment when I started reading a paper 3 hours before the reading group start, and I read, analyzed, and made slides, and spent 45 minutes introducing the paper. I have to say, <strong>THIS IS STRONGLY NOT RECOMMENDED</strong>, and <strong>PREPARE WELL BEFORE PRESENTATION</strong>. The classmates, advisor and the authors will show gratitude to you, I promise.</p>
+<p>Claim: this paper is intended for new students trying to do research with adequate English reading skills(if not, please practice). This article only represents my personal opinion as a student with only 1 year of research experience, and only serves as a reference, not a tutorial. </p>
+<h2 id="Abstract-amp-Introduction"><a href="#Abstract-amp-Introduction" class="headerlink" title="Abstract &amp; Introduction"></a>Abstract &amp; Introduction</h2><p>Abstract and introduction might be the very first noun a mentor may mention on his/her first course on paper reading. </p>
+<p>I used to regard abstract as the introduction to the introduction, after one year’s training, however, I would like to regard the abstract as an introduction to the paper itself. Yes, you didn’t get me wrong. The introduction to the entire <strong>paper</strong> is <em>Abstract section</em>, not the <em>Introduction section</em>. Put your hands down and we will discuss this later. When submitting a paper, abstract is often submitted before the full paper is submitted: the submission has two deadlines: abstract ddl and full paper ddl. The abstract usually introduces:</p>
+<ul>
+<li>how did the idea come from, they may discusses the current situation of the research, and then say: “therefore,…”</li>
+<li>what kind of thing did they present to us: e.g. “we present frostwing98, a blog writing machine which utilizes human intelligence”</li>
+<li>what kind of contribution did they claim. This part is usually twofold. They first introduce the techniques integrated in their system, then introduce impacts of their systems.</li>
+</ul>
+<p>This is pretty much the short abstract, which covers the main components of a research: motivation, challenge, contribution(including novelty), and little details about the system itself. These components are also good metrics for evaluating a good paper.</p>
+<p>Then the introduction part. I am here to answer the previous question. The <em>Introduction section</em> is not a introduction of the paper. It is an expansion to some part covered by the abstract, i.e., the motivation, challenge, and the contribution. Introduction section usually discusses the current situation of researches in detail, then the techniques the paper used, and make judgments on previous works. <strong>But these parts are not so important.</strong> You have to pay attention to <strong>the last two paragraphs</strong>, starting with a list of their claimed contributions.</p>
+<p>You may have to keep the contributions that they claimed in mind. When reading the following part, you have to think well whether their contribution still holds true. Some sneaky writers may change concepts, or alter the original problem, making their contributions more of a bound-to-be rather than intellectual results overcoming challenges. Then you may think whether this is because the problem encountered is inevitable and unsolvable. If problem is inevitable and unsolvable, we may concede their drawback but still regard them as good paper. If not… well…</p>
+<p>When you see this, you may have some certain feelings whether this research is good or not.</p>
+<p>Then, let’s find the related work or the background part. This part may be in the first two pages, or the last one.</p>
+<h2 id="Related-Work"><a href="#Related-Work" class="headerlink" title="Related Work"></a>Related Work</h2><p>In this section, there are two types of related works.</p>
+<p>One is the kind that author may agree with or depend on. e.g. Some techniques the authors adopted, or some similar work done by other teams. But when the authors mention the similar works with a neutral of positive tone, they usually claim their difference from the similar works, and may claim that their are better in the problem defined in their own papers.</p>
+<p>The other one is the most interesting part in a paper, from my perspective. The author lists several works and criticizes each of them. Usually the judgments include words like slower, lager overhead, more vulnerabilities, lack of scalability…… The most interesting things is that there is a chance that you find out the paper itself cannot solve such problems either. Well…… Okay. Sarcasm?</p>
+<h2 id="Design"><a href="#Design" class="headerlink" title="Design"></a>Design</h2><p>I usually recommend to take a quick look at this part, especially the figure of system design and explanations. Then jump to evaluation and conclusion.</p>
+<p>After that, you may see the detailed implementations and design.</p>
+<h2 id="Evaluation"><a href="#Evaluation" class="headerlink" title="Evaluation"></a>Evaluation</h2><p>This is indeed a vital part. A good research, from my opinion, should have good definition of novel problem, solid solution, and good and thorough evaluation. A nasty evaluation ruins a good work, in that it not merely upsets the viewer, but also fails to show how good the work is. To see how a good evaluation is like, I would recommend you to read:”Morpheus: A Vulnerability-Tolerant Secure Architecture Based on Ensembles of Moving Target Defenses with Churn”(ASPLOS’19), if you have some system or security background. This paper was highlighted by me and I gave quite positive judgments on this when sharing this paper in reading group. I took 1 hour and 40 minutes to introduce this work in details. </p>
+<h2 id="Conclusions"><a href="#Conclusions" class="headerlink" title="Conclusions"></a>Conclusions</h2><p>Don’t forget to see the conclusions and check whether the contributions are in consistency, and are delivered without a sneaky change in concepts.</p>
+<h2 id="Implementations"><a href="#Implementations" class="headerlink" title="Implementations"></a>Implementations</h2><p>This is an expansion of the system design. Read this when you have good understanding of the architecture of this paper.</p>
+<p>This is pretty much it. When you read a paper, please pay more attention, checking :</p>
+<ul>
+<li>the consistency of their claimed contribution, be aware of sneaky concept change</li>
+<li>whether the problem itself is defined according to the system or findings itself. I call it ‘reverse definition’ in that usually you have to make discoveries and have a problem and then come up with a solution, rather than churning out a paper when you have a system. <ul>
+<li>Note that discoveries have to be made before a problem is discovered, and discovery is different from solution. A good paper usually starts from good discovery and then define a novel problem of real impact, and then get a solution. Some papers have a solution first, then tries to modify a problem to fit them to a solutions. If it fits bad, well……</li>
+</ul>
+</li>
+<li>whether the paper merely repack some existing techniques and sells the technique just for another problem</li>
+<li>whether they have really done better than those works criticized by them</li>
+</ul>
+<p>and so on.</p>
+<p>A good security paper should have good novelty, thoughtful insights, thorough evaluation, appropriate introduction of related work, and real life impacts. A good paper should not only present a good solution, but also insightful introduction for the other researchers. The reviewers in security are indeed picky, but sometimes they may fail to find vulnerabilities in each work. Therefore appearing on a top conference does not guarantee that a paper is truly solid and of high quality. To judge them, only reading technique and experiences of a reader can be beneficial.</p>
+<p>Hard as it may be, I still hope that you will enjoy reading paper and doing research–Jesus, compared with the grinding time squeezing out solutions and papers, how relaxing  it is to have time to read paper !</p>
+<p>And…Nutshell, have fun doing research. :P</p>
+
+        <!-- 分类文章 -->
+        
+          <div class="post-categoris-bottom">
+            <div class="post-categoris-name">Research</div>
+            <ul>
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2019/06/15/MAIL/" class="post-categoris-bottom-link">
+                  RELEASE! MAIL-Multiple AP Indoor Localization project
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="me base">
+                  <a  href="/2019/10/10/How-to-read-paper/" class="post-categoris-bottom-link">
+                  How to read a computer science paper
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2019/10/25/How-and-How-Not-to-Write-a-Good-Systems-Paper/" class="post-categoris-bottom-link">
+                  How (and How Not) to Write a Good Systems Paper
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2020/09/16/Lessons-learned-on-doing-research/" class="post-categoris-bottom-link">
+                  Lessons Learned on Doing Research
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+            </ul>
+
+          </div>
+
+        
+      </div>
+      <div class="post-content-inner-space">
+        
+          <div class="space-toc-main animate__animated  animate__fadeInUp">
+            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#Abstract-amp-Introduction"><span class="space-toc-text">Abstract &amp; Introduction</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#Related-Work"><span class="space-toc-text">Related Work</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#Design"><span class="space-toc-text">Design</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#Evaluation"><span class="space-toc-text">Evaluation</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#Conclusions"><span class="space-toc-text">Conclusions</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#Implementations"><span class="space-toc-text">Implementations</span></a></li></ol>
+           </div>
+        
+      </div>
+   </div>
+    <!-- 评论 -->
+    
+  </div>
+</article>
+
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>

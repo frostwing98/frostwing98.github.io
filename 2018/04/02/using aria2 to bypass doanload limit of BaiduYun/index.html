@@ -1,0 +1,192 @@
+
+
+<body>
+
+
+<div class="body-outer">
+  <div class="body-inner">
+    
+<link rel="stylesheet" href="/css/white.css">
+
+<article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      <div class="post-title animate__animated  animate__fadeInUp">using aria2 to bypass doanload limit of BaiduYun</div>
+      <div class="meta-intro animate__animated  animate__fadeInUp">Apr 02 2018</div>
+      
+    </div>
+    <div class="post-content-inner">
+      <div class="post-content-inner-space">
+
+      </div>
+      <div class="post-content-main animate__animated  animate__fadeInUp">
+        <!-- top型目录 -->
+        
+        <h1 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h1><p>&lt;!doctype html&gt; Problem: there is no Baiduyun client on linux… 管他呢，垃圾百度云限我速度，早知道就不送这么多钱了……<br>1.chrome://extensions，安装baiduexporter与aria2c <strong>之后打开百度云可以看到多了一个导出下载选项。</strong></p>
+<ol start="2">
+<li>apt-get install aria2 配置 最小限制：10M json-rpc链接：<a href="http://127.0.0.1:6800/jsonrpc" target="_blank" rel="noopener">http://127.0.0.1:6800/jsonrpc</a></li>
+<li>aria2.sh中写入：</li>
+</ol>
+<blockquote>
+<p>aria2c –enable-rpc –rpc-listen-all –rpc-allow-origin-all –file-allocation=none –max-connection-per-server=3 –max-concurrent-downloads=5 –continue -d ~/ 这个脚本在后台运行aria2.</p>
+</blockquote>
+<p><strong>选中文件，导出下载，就可以看到速度飞升。</strong> 4.<a href="http://binux.github.io/yaaw/demo/" target="_blank" rel="noopener">http://binux.github.io/yaaw/demo/</a> 扳手那里设置127.0.0.1:6800就可以在线看到。</p>
+
+        <!-- 分类文章 -->
+        
+          <div class="post-categoris-bottom">
+            <div class="post-categoris-name">Daily</div>
+            <ul>
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/03/08/%5BSolution%5D%20404%20Article%20after%20customizing%20wordpress%20permalink/" class="post-categoris-bottom-link">
+                  [Solution] 404 Article after customizing wordpress permalink
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="me base">
+                  <a  href="/2018/04/02/using%20aria2%20to%20bypass%20doanload%20limit%20of%20BaiduYun/" class="post-categoris-bottom-link">
+                  using aria2 to bypass doanload limit of BaiduYun
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/04/13/Solution:%5C_err_tunnel_connection_failed%20when%20visiting%20shadowsocks%20on%20VPS/" class="post-categoris-bottom-link">
+                  Solution: err_tunnel_connection_failed when visiting shadowsocks on VPS
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/07/25/%5BVPN%20Again%5D%20Solving%20pip%20conflict%20when%20installing%20%20shadowsocks%20on%20VPS/" class="post-categoris-bottom-link">
+                  [VPN Again] Solving pip conflict when installing  shadowsocks on VPS
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/08/16/english-posts-from-today-on/" class="post-categoris-bottom-link">
+                  English Posts From Today On
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/08/23/two-strange-problems-of-using-apt/" class="post-categoris-bottom-link">
+                  Solving [Waiting for headers] when using apt-get update
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/11/15/printer-driver-on-linux/" class="post-categoris-bottom-link">
+                  Printer driver on Linux
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2019/10/25/Get-yourself-a%20zsh/" class="post-categoris-bottom-link">
+                  Get yourself a zsh in linux!
+                </a>
+                </li>
+              
+              
+            
+            
+            
+            
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+            </ul>
+
+          </div>
+
+        
+      </div>
+      <div class="post-content-inner-space">
+        
+          <div class="space-toc-main animate__animated  animate__fadeInUp">
+            
+           </div>
+        
+      </div>
+   </div>
+    <!-- 评论 -->
+    
+  </div>
+</article>
+
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>

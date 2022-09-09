@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Get yourself a zsh in linux! | FROSTLAND | Yuqing Yang(frostwing98)&#39;s personal website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Linux">
+    <meta name="description" content="Get yourself a zsh in Linux!                                                                                                           Yeah why not? How can you not be amazed at the stunning beauty of">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Get yourself a zsh in linux!">
+<meta property="og:url" content="http://yoursite.com/2019/06/15/Get-yourself-a zsh/index.html">
+<meta property="og:site_name" content="FROSTLAND">
+<meta property="og:description" content="Get yourself a zsh in Linux!                                                                                                           Yeah why not? How can you not be amazed at the stunning beauty of">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/images/zsh.png">
+<meta property="og:updated_time" content="2019-10-25T13:06:23.664Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Get yourself a zsh in linux!">
+<meta name="twitter:description" content="Get yourself a zsh in Linux!                                                                                                           Yeah why not? How can you not be amazed at the stunning beauty of">
+<meta name="twitter:image" content="http://yoursite.com/images/zsh.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="FROSTLAND" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">frostwing98</h5>
+          <a href="mailto:frostwing98@smail.nju.edu.cn" title="frostwing98@smail.nju.edu.cn" class="mail">frostwing98@smail.nju.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                Main Page
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about">
+                <i class="icon icon-lg icon-question"></i>
+                About
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/research">
+                <i class="icon icon-lg icon-map-o"></i>
+                Research
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about/YuqingYang_CV.pdf">
+                <i class="icon icon-lg icon-vcard-o"></i>
+                Curriculum Vitae
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/agenda">
+                <i class="icon icon-lg icon-calendar-check-o"></i>
+                Agenda
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/frostwing98" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/people">
+                <i class="icon icon-lg icon-handshake-o"></i>
+                People
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Get yourself a zsh in linux!</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+
+    <div class="container fade-scale">
+
+        <h1 class="title">Get yourself a zsh in linux!</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-06-15T03:44:00.000Z" itemprop="datePublished" class="page-time">
+  2019-06-15
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Daily/">Daily</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Get-yourself-a-zsh-in-Linux"><span class="post-toc-number">1.</span> <span class="post-toc-text">Get yourself a zsh in Linux!</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Step-0x00"><span class="post-toc-number">2.</span> <span class="post-toc-text">Step 0x00</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Step-0x01"><span class="post-toc-number">3.</span> <span class="post-toc-text">Step 0x01</span></a></li></ol>
+		<p>
+		</p><h4>Visit count(since 2019.6):</h4>
+		<script type="text/javascript" src="//rf.revolvermaps.com/0/0/1.js?i=5abn80aosdp&amp;s=220&amp;m=6&amp;v=true&amp;r=false&amp;b=000000&amp;n=false&amp;c=ff00ff" async="async"></script>
+		<p></p>
+        </nav>
+    </aside>
+
+
+
+<article id="post-Get-yourself-a zsh" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Get yourself a zsh in linux!</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-06-15 11:44:00" datetime="2019-06-15T03:44:00.000Z" itemprop="datePublished">2019-06-15</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Daily/">Daily</a></li></ul>
+
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="Get-yourself-a-zsh-in-Linux"><a href="#Get-yourself-a-zsh-in-Linux" class="headerlink" title="Get yourself a zsh in Linux!"></a>Get yourself a zsh in Linux!</h1><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/zsh.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<p>Yeah why not? How can you not be amazed at the stunning beauty of zsh theme?!</p>
+<p>Oh you are a windows user? All right, forget about it. I was talking to a wrong person. :(</p>
+<h1 id="Step-0x00"><a href="#Step-0x00" class="headerlink" title="Step 0x00"></a>Step 0x00</h1><p>Let’s come back to our focus. In fact it is extremely easy to set up a zsh in linux, with support of apt. Just a <code>apt install zsh</code> or <code>apt-get install zsh</code> will do.</p>
+<p>Then, you will have to change the default shell for root user. <code>chsh -s /usr/bin/zsh root</code></p>
+<p>To check, <code>echo $SHELL</code>.</p>
+<h1 id="Step-0x01"><a href="#Step-0x01" class="headerlink" title="Step 0x01"></a>Step 0x01</h1><p>You might want to configure your theme. Yeah, why not?! What? You are a windows user?….Okay, enough for windows joke. :{</p>
+<p>The most well-known or popular theme might be the oh-my-zsh theme. It is no doubt an elegant, neat, and pretty theme. To install, linux users need only simple operations.</p>
+<p>By doing a <code>wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh</code>, a simple installation shell script is downloaded and executed. And what you need to do is simply copying config template to replace the zshrc file. <code>cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</code></p>
+<p>Don’t forget to source it. <code>source ~/.zshrc</code></p>
+<p>There are many more operations to further customize your zsh theme. For more information, please check <a href="https://www.howtoforge.com/tutorial/how-to-setup-zsh-and-oh-my-zsh-on-linux/" target="_blank" rel="noopener">this page</a>.</p>
+<p>Happy hacking!</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-10-25T13:06:23.664Z" itemprop="dateUpdated">2019-10-25 21:06:23</time>
+</span><br>
+
+
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="frostwing98">
+            frostwing98
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/06/15/Get-yourself-a zsh/&title=《Get yourself a zsh in linux!》 — FROSTLAND&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/06/15/Get-yourself-a zsh/&title=《Get yourself a zsh in linux!》 — FROSTLAND&source=My personal blog" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/06/15/Get-yourself-a zsh/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Get yourself a zsh in linux!》 — FROSTLAND&url=http://yoursite.com/2019/06/15/Get-yourself-a zsh/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/06/15/Get-yourself-a zsh/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/10/10/How-to-read-paper/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">How to read a computer science paper</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/06/15/MAIL/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">RELEASE! MAIL-Multiple AP Indoor Localization project</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>frostwing98 &copy; 2017 - 2019</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2019/06/15/Get-yourself-a zsh/&title=《Get yourself a zsh in linux!》 — FROSTLAND&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2019/06/15/Get-yourself-a zsh/&title=《Get yourself a zsh in linux!》 — FROSTLAND&source=My personal blog" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/06/15/Get-yourself-a zsh/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Get yourself a zsh in linux!》 — FROSTLAND&url=http://yoursite.com/2019/06/15/Get-yourself-a zsh/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2019/06/15/Get-yourself-a zsh/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIklEQVR42u3ay26FMAwFwPv/P02l7qoWdGxDJZLJqgJuyrCw4sfnE6/je51dOU7W2d3f+1w/c9vCwMB4LeO4XMkz18je/8qfx8DA2IdxHWSTF31in2RPDAwMjOvjXR40q0dMDAwMjAkj2nScgWJgYGDcm1gmQbYXlB/JxTEwMF7IqDYG/vPvB/sbGBgYL2EcrZXzejuXf4WBgbE0Iz/G9UpjvQGL/Eq5OoiBgfFCxiT85cWy/PnqwRQDA2MHxr3txrxhkF9PQj8GBsbajN6L5oE1eenJp/mRi2NgYCzKqCaNd716HkybnVgMDIzlGHmJv1oymxw9y0ksBgbGoozeoFUSaqtp6mgfDAyMDRhPBNZJ0a18QMTAwNiGce+rTI6G1eEzDAyMHRi98ax8LKyalJbLfBgYGEszJke3BDZpVY5mRjAwMBZi5CE1L8blL5SE7OjjYmBgbMColu/zAHrvr04/KwYGxgaM6qhEcjcJ5XlILRwNMTAwlmPkwfGJtkG1aRodIjEwMJZjVAe8qqW0fP/RUBoGBsbSjGriOmkbJEfJEQADA2NRxlFcvXQ0b20mqfUfdzEwMJZmVBuQeaidB+L5IAgGBsZKjEmQnQxqVJPbKH3FwMBYmnFvqyAP3L1CW3NyBAMDY3vGPLnNBzseDLgYGBgvZ+Rlr94nGAV3DAyMDRh5ElttMVaT4V7bAAMDY21GNfmcR7weqZf6YmBgvJzxBarzRrx3rY1LAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Fatal Error!';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'It is a joke XD';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+
+</body>
+</html>

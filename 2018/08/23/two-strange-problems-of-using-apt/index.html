@@ -1,0 +1,194 @@
+
+
+<body>
+
+
+<div class="body-outer">
+  <div class="body-inner">
+    
+<link rel="stylesheet" href="/css/white.css">
+
+<article class="post-inner">
+  <div class="post-content-outer">
+    <div class="post-intro">
+      <div class="post-title animate__animated  animate__fadeInUp">Solving [Waiting for headers] when using apt-get update</div>
+      <div class="meta-intro animate__animated  animate__fadeInUp">Aug 23 2018</div>
+      
+    </div>
+    <div class="post-content-inner">
+      <div class="post-content-inner-space">
+
+      </div>
+      <div class="post-content-main animate__animated  animate__fadeInUp">
+        <!-- top型目录 -->
+        
+        <h4 id="Problem-When-using-apt-get-update-always-stuck-following-conditions"><a href="#Problem-When-using-apt-get-update-always-stuck-following-conditions" class="headerlink" title="Problem: When using apt-get update, always stuck @ following conditions:"></a>Problem: When using apt-get update, always stuck @ following conditions:</h4><blockquote>
+<p>[Waiting for headers]</p>
+</blockquote>
+<h3 id="or"><a href="#or" class="headerlink" title="or"></a>or</h3><blockquote>
+<p>[Waiting for headers] [Connecting to security.ubuntu.com (2001:67c:1360:8001</p>
+</blockquote>
+<h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution 1:"></a>Solution 1:</h3><p>Such problem could happen when ipv6 is enabled while software source doesn’t support. We can force apt-get use ipv4 method to download by using command as followed:</p>
+<p>sudo apt-get -o Acquire::ForceIPv4=true update</p>
+<h3 id="Solution-2"><a href="#Solution-2" class="headerlink" title="Solution 2:"></a>Solution 2:</h3><p>Such problem could happen when previous software sources have been updated partially, when being too eager to press Ctrl+C, can cause integrity problems. Such problems could be solved by using:</p>
+<p>sudo rm -r /var/lib/apt/lists/<em><br>sudo rm -r /var/lib/apt/lists/partial/</em> </p>
+<h3 id="Solution-3"><a href="#Solution-3" class="headerlink" title="Solution 3:"></a>Solution 3:</h3><p>By removing all useless or expired software sources, PPAs, and anything else.</p>
+
+        <!-- 分类文章 -->
+        
+          <div class="post-categoris-bottom">
+            <div class="post-categoris-name">Daily</div>
+            <ul>
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/03/08/%5BSolution%5D%20404%20Article%20after%20customizing%20wordpress%20permalink/" class="post-categoris-bottom-link">
+                  [Solution] 404 Article after customizing wordpress permalink
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/04/02/using%20aria2%20to%20bypass%20doanload%20limit%20of%20BaiduYun/" class="post-categoris-bottom-link">
+                  using aria2 to bypass doanload limit of BaiduYun
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/04/13/Solution:%5C_err_tunnel_connection_failed%20when%20visiting%20shadowsocks%20on%20VPS/" class="post-categoris-bottom-link">
+                  Solution: err_tunnel_connection_failed when visiting shadowsocks on VPS
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/07/25/%5BVPN%20Again%5D%20Solving%20pip%20conflict%20when%20installing%20%20shadowsocks%20on%20VPS/" class="post-categoris-bottom-link">
+                  [VPN Again] Solving pip conflict when installing  shadowsocks on VPS
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/08/16/english-posts-from-today-on/" class="post-categoris-bottom-link">
+                  English Posts From Today On
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+                <li class="me base">
+                  <a  href="/2018/08/23/two-strange-problems-of-using-apt/" class="post-categoris-bottom-link">
+                  Solving [Waiting for headers] when using apt-get update
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2018/11/15/printer-driver-on-linux/" class="post-categoris-bottom-link">
+                  Printer driver on Linux
+                </a>
+                </li>
+              
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2019/10/25/Get-yourself-a%20zsh/" class="post-categoris-bottom-link">
+                  Get yourself a zsh in linux!
+                </a>
+                </li>
+              
+              
+            
+            
+            
+            
+            
+            
+            
+              
+            
+            
+            
+              
+            
+            
+            
+            
+            
+            
+            </ul>
+
+          </div>
+
+        
+      </div>
+      <div class="post-content-inner-space">
+        
+          <div class="space-toc-main animate__animated  animate__fadeInUp">
+            
+           </div>
+        
+      </div>
+   </div>
+    <!-- 评论 -->
+    
+  </div>
+</article>
+
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
