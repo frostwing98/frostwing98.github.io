@@ -5,8 +5,8 @@ img {
   max-width: 600px;
 }
 * {
-  padding: 0;
-  margin: 0;
+  padding: 2;
+  margin: 2;
 }
 body {
   height: 100%;
