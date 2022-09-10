@@ -1,3 +1,4 @@
+
 body {
   background-color: #fff;
   padding:0px;
@@ -106,6 +107,7 @@ th {
 
 img {
   max-width:100%;
+  vertical-align: middle;
 }
 
 header {
@@ -174,12 +176,14 @@ header ul a strong {
   color:#222;
 }
 
+
 section {
   width:800px;
-  
+  display:flex;
   margin-right:auto;
   margin-left:auto;
   padding-bottom:50px;
+  
 }
 
 small {
