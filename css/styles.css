@@ -179,7 +179,7 @@ header ul a strong {
 
 section {
   width:800px;
-  display:flex;
+  /* display:flex; */
   margin-right:auto;
   margin-left:auto;
   padding-bottom:50px;
