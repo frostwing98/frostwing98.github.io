@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+PRODID:-//zoom.us//iCalendar Event//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+CLASS:PUBLIC
+BEGIN:VTIMEZONE
+TZID:America/New_York
+LAST-MODIFIED:20250121T082933Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZNAME:EDT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:EST
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20250402T234232Z
+DTSTART;TZID=America/New_York:20250403T090000
+DTEND;TZID=America/New_York:20250403T110000
+SUMMARY:Yuqing Yang's Dissertation Defense
+UID:20250402T234232Z-92134992060@fe80:0:0:0:a87b:2eff:fea5:e6d1eth0
+TZID:America/New_York
+DESCRIPTION:Yuqing Yang is inviting you to a scheduled Zoom meeting.\n\nJ
+ oin Zoom Meeting\nhttps://osu.zoom.us/j/92134992060?pwd=SMHIc88DHYDMXQur
+ uk7My0Zmmab6l8.1\n\nMeeting ID: 921 3499 2060\nPassword: 625996\nOne tap
+  mobile\n+13017158592\,\,92134992060#\,\,\,\,0#\,\,625996# US (Washingto
+ n DC)\n+13126266799\,\,92134992060#\,\,\,\,0#\,\,625996# US (Chicago)\n\
+ nDial by your location\n        +1 301 715 8592 US (Washington DC)\n    
+     +1 312 626 6799 US (Chicago)\n        +1 646 876 9923 US (New York)\
+ n        +1 651 372 8299 US (Minnesota)\n        +1 253 215 8782 US (Tac
+ oma)\n        +1 346 248 7799 US (Houston)\n        +1 408 638 0968 US (
+ San Jose)\n        +1 669 900 6833 US (San Jose)\nMeeting ID: 921 3499 2
+ 060\nPassword: 625996\nFind your local number: https://osu.zoom.us/u/abT
+ 3QcuhS0\n\nJoin by SIP:\nsip:92134992060@zoomcrc.com\n\nJoin by H.323\n1
+ 44.195.19.161 (US West)\n206.247.11.121 (US East)\n115.114.131.7 (India 
+ Mumbai)\n115.114.115.7 (India Hyderabad)\n159.124.15.191 (Amsterdam Neth
+ erlands)\n159.124.47.249 (Germany)\n159.124.104.213 (Australia Sydney)\n
+ 159.124.74.212 (Australia Melbourne)\n64.211.144.160 (Brazil)\n159.124.1
+ 68.213 (Canada Toronto)\n159.124.196.25 (Canada Vancouver)\n170.114.194.
+ 163 (Japan Tokyo)\n147.124.100.25 (Japan Osaka)\nMeeting ID: 921 3499 20
+ 60\nPassword: 625996\n\n---\nThe Ohio State University\n---\n \nPlease d
+ irect question about this meeting to the meeting organizer.\n \nCarmenZo
+ om is a service provided by the Office of Technology and Digital Innovat
+ ion (IT.osu.edu).\n \ngo.osu.edu/SystemStatus\n614-688-4357 (HELP)\nCarm
+ enZoom@osu.edu\n \nIf you have a disability and have trouble accessing t
+ his content\, please call the Accessibility Help Line 614-292-5000.\n \n
+ Privacy: go.osu.edu/privacy\nDigital Accessibility: accessibility.osu.ed
+ u\nNondiscrimination Notice (PDF): go.osu.edu/NonDiscrimination-Notice
+LOCATION:https://osu.zoom.us/j/92134992060?pwd=SMHIc88DHYDMXQuruk7My0Zmma
+ b6l8.1
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
