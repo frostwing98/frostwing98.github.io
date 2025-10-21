@@ -87,6 +87,8 @@ pre {
 table {
   width:100%;
   border:1px solid #eee;
+  font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
   /* margin: 1 1 1 1 px; */
 }
 
