@@ -40,12 +40,14 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#BB0000;
+  /* color:#BB0000; */
+  color: #00509b;
   text-decoration:none;
 }
 
 a:hover {
-  color:#BB0000;
+  /* color:#BB0000; */
+  color:#00509b;
 }
 
 a small {
